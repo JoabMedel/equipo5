@@ -3,194 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;900&display=swap');
-    </style>
+    <link rel="stylesheet" href="css-code/lay-out.css">
+    <link rel="stylesheet" href="css-code/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://vien-angular.coloredstrategies.com/favicon.ico">
+    <script src="css-code/script.js"></script>
+    <title>Vien Admin Theme</title>
 </head>
 <body>
-    <section>
-        <!-- box tittle -->
-        <nav class="flexbox">
-            <div class="head">ls</div>
-        </nav>
-        <!-- componente 01 -->
-        <nav class="flexbox">
-            <div class="comp_01-03">
-                <div class="flexboxspace">
-                    <div class="comp01">
-                        <svg class="bi bi-alarm" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M8 15A6 6 0 1 0 8 3a6 6 0 0 0 0 12zm0 1A7 7 0 1 0 8 2a7 7 0 0 0 0 14z"/>
-                            <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.053.224l-1.5 3a.5.5 0 1 1-.894-.448L7.5 8.882V5a.5.5 0 0 1 .5-.5z"/>
-                            <path d="M.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527z"/>
-                            <path fill-rule="evenodd" d="M11.646 14.146a.5.5 0 0 1 .708 0l1 1a.5.5 0 0 1-.708.708l-1-1a.5.5 0 0 1 0-.708zm-7.292 0a.5.5 0 0 0-.708 0l-1 1a.5.5 0 0 0 .708.708l1-1a.5.5 0 0 0 0-.708zM5.5.5A.5.5 0 0 1 6 0h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
-                            <path d="M7 1h2v2H7V1z"/>
-                        </svg>
-                        <br>
-                        <br>
-                        <p class="othercolorcomp01">Pending Orders</p>
-                        <p class="fontsizecomp01">14</p>
-                    </div>
-                    <div class="comp01">
-                        <svg class="bi bi-bag-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 4h14v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7-2.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z"/>
-                        </svg>
-                        <br>
-                        <br>
-                        <p class="othercolorcomp01">Complete Orders</p>
-                        <p class="fontsizecomp01">32</p>
-                    </div>
-                    <div class="comp01">
-                        <svg class="bi bi-arrow-clockwise" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M3.17 6.706a5 5 0 0 1 7.103-3.16.5.5 0 1 0 .454-.892A6 6 0 1 0 13.455 5.5a.5.5 0 0 0-.91.417 5 5 0 1 1-9.375.789z"/>
-                            <path fill-rule="evenodd" d="M8.147.146a.5.5 0 0 1 .707 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 1 1-.707-.708L10.293 3 8.147.854a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                        <br>
-                        <br>
-                        <p class="othercolorcomp01">Refund Requests</p>
-                        <p class="fontsizecomp01">74</p>
-                    </div>
-                    <div class="comp01">
-                        <svg class="bi bi-envelope-open-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.313l6.709 3.933L8 8.928l1.291.717L16 5.715V5.4a2 2 0 0 0-1.059-1.765l-6-3.2zM16 6.873l-5.693 3.337L16 13.372v-6.5zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516zM0 13.373l5.693-3.163L0 6.873v6.5z"/>
-                        </svg>
-                        <br>
-                        <br>
-                        <p class="othercolorcomp01">New Coments</p>
-                        <p class="fontsizecomp01">25</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="comp03">ls</div>
-                </div>
-            </div>
-            <!-- componente 02 -->
-            <div class="comp02">
-                <div class="flexboxspace">
-                    <div>
-                        Recent Orders
-                    </div>
-                    <div>
-                        <svg class="bi bi-arrow-clockwise" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M3.17 6.706a5 5 0 0 1 7.103-3.16.5.5 0 1 0 .454-.892A6 6 0 1 0 13.455 5.5a.5.5 0 0 0-.91.417 5 5 0 1 1-9.375.789z"/>
-                            <path fill-rule="evenodd" d="M8.147.146a.5.5 0 0 1 .707 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 1 1-.707-.708L10.293 3 8.147.854a.5.5 0 0 1 0-.708z"/>
-                          </svg>
-                    </div>
-                </div>
-                <div class="margintop scroll">
-                    <div class="flexbox">
-                        <div>
-                            <img src="https://vien-angular.coloredstrategies.com/assets/img/marble-cake-thumb.jpg" alt="O" width="113px" height="80px" class="borderradiusmin">
-                        </div>
-                        <div class="margintextmin">
-                            <p>Marble Cake</p>
-                            <p class="exsmallfont colorgrey">Wedding Cake with flowers Macarons and blueberries</p>
-                            <p class="smallfont colorblue">02.04.2018</p>
-                        </div>
-                    </div>
-                    <div class="flexbox">
-                        <div>
-                            <img src="https://vien-angular.coloredstrategies.com/assets/img/marble-cake-thumb.jpg" alt="O" width="113px" height="80px" class="borderradiusmin">
-                        </div>
-                        <div class="margintextmin">
-                            <p>Marble Cake</p>
-                            <p class="exsmallfont colorgrey">Wedding Cake with flowers Macarons and blueberries</p>
-                            <p class="smallfont colorblue">02.04.2018</p>
-                        </div>
-                    </div>
-                    <div class="flexbox">
-                        <div>
-                            <img src="https://vien-angular.coloredstrategies.com/assets/img/marble-cake-thumb.jpg" alt="O" width="113px" height="80px" class="borderradiusmin">
-                        </div>
-                        <div class="margintextmin">
-                            <p>Marble Cake</p>
-                            <p class="exsmallfont colorgrey">Wedding Cake with flowers Macarons and blueberries</p>
-                            <p class="smallfont colorblue">02.04.2018</p>
-                        </div>
-                    </div>
-                    <div class="flexbox">
-                        <div>
-                            <img src="https://vien-angular.coloredstrategies.com/assets/img/marble-cake-thumb.jpg" alt="O" width="113px" height="80px" class="borderradiusmin">
-                        </div>
-                        <div class="margintextmin">
-                            <p>Marble Cake</p>
-                            <p class="exsmallfont colorgrey">Wedding Cake with flowers Macarons and blueberries</p>
-                            <p class="smallfont colorblue">02.04.2018</p>
-                        </div>
-                    </div>
-                    <div class="flexbox">
-                        <div>
-                            <img src="https://vien-angular.coloredstrategies.com/assets/img/marble-cake-thumb.jpg" alt="O" width="113px" height="80px" class="borderradiusmin">
-                        </div>
-                        <div class="margintextmin">
-                            <p>Marble Cake</p>
-                            <p class="exsmallfont colorgrey">Wedding Cake with flowers Macarons and blueberries</p>
-                            <p class="smallfont colorblue">02.04.2018</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <!-- componente 04 -->
-        <nav class="flexbox">
-            <div class="comp04">ls</div>
-            <div class="comp04">ls</div>
-            <div class="comp_04">ls</div>
-        </nav>
-        <!-- componente 05 -->
-        <nav class="flexbox">
-            <div class="comp05">ls</div>
-            <div class="comp_05">ls</div>
-        </nav>
-        <!-- componente 06 -->
-        <nav class="flexbox">
-            <div class="comp06">ls</div>
-            <div class="comp06">ls</div>
-            <div class="comp_06">ls</div>
-        </nav>
-        <!-- componente 07 -->
-        <nav class="flexbox">
-            <div class="comp07">ls</div>
-            <div class="comp07">ls</div>
-            <div class="comp07">ls</div>
-            <div class="comp_07">ls</div>
-        </nav>
-        <!-- componente 08 -->
-        <nav class="flexbox">
-            <div class="comp08">ls</div>
-            <div class="comp_08">ls</div>
-        </nav>
-        <!-- componente 09 -->
-        <seccion class="flexbox">
-            <nav class="compghost09-10">
-                <div class="comp09">ls</div>
-                <div class="comp09">ls</div>
-                <div class="comp09">ls</div>
-            </nav>
-            <!-- componente 10 -->
-            <nav class="compghost09-10">
-                <div class="comp10">ls</div>
-            </nav>
-            <!-- componente 11 y 12 -->
-            <nav class="compghost11-12">
-                <!-- componente 11 -->
-                <div class="flexbox">
-                    <div class="fwidthcomp11">
-                        <div class="comp11">ls</div>
-                        <div class="comp11">ls</div>
-                    </div>
-                    <div class="fwidthcomp11">
-                        <div class="comp_11">ls</div>
-                        <div class="comp_11">ls</div>
-                    </div>
-                </div>
-                <!-- componente 12 -->
-                <div>
-                    <div class="comp12">ls</div>
-                </div>
-            </nav>
-        </section>
-    </seccion>
+    <div>
+<div id="login-form" class="container-form">
+    <div class="img-top padding">
+        <p> <h3 class="tittle">MAGIC IS IN THE DETAILS</h2></p>
+        <p>Please use your credentials to Log-in
+            <br>
+            If you are not a member, please <span class="toggle" onclick="openRegister()">register</span>
+        </p>
+       </div>
+
+    <div class="form">
+       <div class="img-logo">
+       </div>
+        <h2>Iniciar secion</h2>
+        <form class="" action="#">
+            <input type="email" placeholder="Correo Electronico" required>
+            <input type="password" placeholder="Contraseña" required>
+            <input type="Submit" value="Log-in">
+        </form>
+        <div class="reset-password">
+            <a href="forgot-psw.html">Forgot password?</a>
+        </div>
+    </div>
+</div>
+
+<div id="register-form" class="container-form hide">
+    <div class="img-top padding">
+        <p> <h2 class="tittle">MAGIC IS IN THE DETAILS</h2></p>
+        <p>Please use the form to register.
+            <br>
+            If you are a member, please <span class="toggle" onclick="openLogin()">login</span>
+        </p>
+       </div>
+       
+    <div class="form">
+           <div class="img-logo">
+        </div>
+        <h2>register</h2>
+        <form class="" action="#">
+            <input type="text" placeholder="Full Name">
+            <input type="password" placeholder="Contraseña" required>
+            <input type="email" placeholder="Correo Electronico" required>
+            <input type="Submit" value="register">
+        </form>
+
+    </div>
+</div>
+</div>
 </body>
 </html>
