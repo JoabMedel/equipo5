@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/iconsmind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
+</head>
+<body>
+    <nav class="topbar">
+        <div class="topbar-left">
+            <span onclick="openMenu('sidebar')" class="hamburger"><i class="icon-menu"></i></span>            
+            <div class="search-section">
+                <input placeholder="Search..." class="display-none search-bar">
+                <span class="search"><i class="icon-magnifier"></i></span>
+            </div>
+            <div class="btn-language">
+                <button class="dropdown-btn">EN</button>
+                <ul class="dropdown-menu toggle-dropdown display-none">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Español</a></li>
+                    <li><a href="#">English - RTL</a></li>
+                </ul>
+            </div>
+            <div class="btn-buy">
+                <a href="#"><button>BUY</button></a>
+            </div>
+        </div>
+        <div class="topbar-center">
+            <a href="#"><span>logo</span></a>
+        </div>
+        <div class="topbar-right">
+            <div class="header-icons">
+                <ul>
+                    <li>
+                        <button class="dropdown-btn btn-small-device"><i class="icon-grid"></i></button>
+                        <div class="dropdown-menu grid-menu toggle-dropdown display-none">
+                            <a href="#"><i class="iconsminds-Equalizer"></i><span>Settings</span></a>
+                            <a href="#"><i class="iconsminds-MaleFemale"></i><span>Users</span></a>
+                            <a href="#"><i class="iconsminds-Puzzle"></i><span>Components</span></a>
+                            <a href="#"><i class="iconsminds-Bar-Chart4"></i><span>Profits</span></a>
+                            <a href="#"><i class="iconsminds-File"></i><span>Survey</span></a>
+                            <a href="#"><i class="iconsminds-Suitcase"></i><span>Tasks</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="dropdown-btn"><i class="icon-bell"><span class="count">3</span></i></button>
+                        <div class="dropdown-menu notification toggle-dropdown display-none" >                           
+                            <ul>
+                                <li><a href="#"><img src="https://vien-angular.coloredstrategies.com/assets/img/profile-pic-l-2.jpg" alt="other-user"></a><div class="notification-information"><a href="#"><p>Joisse Kaycee just sent a new comment!</p><p>09.04.2018 - 12:45</p></a></div></li>
+                                <li><a href="#"><img src="https://vien-angular.coloredstrategies.com/assets/img/profile-pic-l-2.jpg" alt="other-user"></a><div class="notification-information"><a href="#"><p>Joisse Kaycee just sent a new comment!</p><p>09.04.2018 - 12:45</p></a></div></li>
+                                <li><a href="#"><img src="https://vien-angular.coloredstrategies.com/assets/img/profile-pic-l-2.jpg" alt="other-user"></a><div class="notification-information"><a href="#"><p>Joisse Kaycee just sent a new comment!</p><p>09.04.2018 - 12:45</p></a></div></li>
+                                <li><a href="#"><img src="https://vien-angular.coloredstrategies.com/assets/img/profile-pic-l-2.jpg" alt="other-user"></a><div class="notification-information"><a href="#"><p>Joisse Kaycee just sent a new comment!</p><p>09.04.2018 - 12:45</p></a></div></li>
+                                <li><a href="#"><img src="https://vien-angular.coloredstrategies.com/assets/img/profile-pic-l-2.jpg" alt="other-user"></a><div class="notification-information"><a href="#"><p>Joisse Kaycee just sent a new comment!</p><p>09.04.2018 - 12:45</p></a></div></li>
+                                <li><a href="#"><img src="https://vien-angular.coloredstrategies.com/assets/img/profile-pic-l-2.jpg" alt="other-user"></a><div class="notification-information"><a href="#"><p>Joisse Kaycee just sent a new comment!</p><p>09.04.2018 - 12:45</p></a></div></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="dropdown-btn btn-small-device"><i class="icon-size-fullscreen"></i></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="user-image">
+                <button class="dropdown-btn">
+                    <img src="https://vien-angular.coloredstrategies.com/assets/img/profile-pic-l.jpg" alt="profile-picture">
+                </button>
+                <ul class="dropdown-menu user-tools toggle-dropdown display-none">
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">  </a></li>
+                    <li><a href="#">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="sidebar-menu display-none" id="sidebar">
+        <ul > 
+            <li id="uno" onclick="openSubmenu('menu', 'first-submenu')"><i class="iconsminds-Shop-4"></i>Tableros</li>
+            <li onclick="openSubmenu('menu', 'second-submenu')"><i class="iconsminds-Digital-Drawing"></i>Páginas</li>
+            <li><i class="iconsminds-Air-Balloon"></i>Aplicaciones</li>
+            <li><i class="iconsminds-Pantone"></i>IU</li>
+            <li><i class="iconsminds-Three-ArrowFork"></i>Menú</li>
+            <li><i class="iconsminds-Bucket"></i>Blank Page</li>
+            <li><i class="iconsminds-Library-2"></i>Docs</li>
+        </ul>
+    </div>
+    <div class="sidebar-submenu display-none" id="menu">
+        <ul class="list-items-submenu margin-list-items display-none" id="first-submenu"> 
+            <li><a href="#"><i class="icon-briefcase"></i>Defecto</a></li>
+            <li><a href="#"><i class="icon-pie-chart"></i>Analítica</a></li>
+            <li><a href="#"><i class="icon-basket-loaded"></i>Comercio electrónico</a></li>
+            <li><a href="#"><i class="icon-doc"></i>Contenido</a></li>
+        </ul>
+        <ul class="display-none" id="second-submenu">
+            <div class="dropdown-btn subtitle-submenu"><i class="icon-arrow-down"></i>Authorization</div>
+            <ul class="list-items-submenu">
+                <li><a href="#"><i class="icon-user"></i>Iniciar sesión</a></li>
+                <li><a href="#"><i class="icon-user-follow"></i>Registro</a></li>
+                <li><a href="#"><i class="icon-user-unfollow"></i>Olvidé mi contraseña</a></li>
+                <li><a href="#"><i class="icon-user-following"></i>Reiniciar contraseña</a></li>
+            </ul>
+            <div class="dropdown-btn subtitle-submenu"><i class="icon-arrow-down"></i>Producto</div>
+            <ul class="list-items-submenu">
+                <li><a href="#"><i class="icon-credit-card"></i>Lista Datos</a></li>
+                <li><a href="#"><i class="icon-list"></i>Lista Pulgares</a></li>
+                <li><a href="#"><i class="icon-grid"></i>Lista Imagen</a></li>
+                <li><a href="#"><i class="icon-picture"></i>Detalles</a></li>
+                <li><a href="#"><i class="icon-book-open"></i>Detalles Alt</a></li>
+            </ul>
+            <div class="dropdown-btn subtitle-submenu"><i class="icon-arrow-down"></i>Profile</div>
+            <ul class="list-items-submenu">
+                <li><a href="#"><i class="icon-share"></i>Social</a></li>
+                <li><a href="#"><i class="icon-link"></i>Portafolio</a></li>
+            </ul>
+            <div class="dropdown-btn subtitle-submenu"><i class="icon-arrow-down"></i>Blog</div>
+            <ul class="list-items-submenu">
+                <li><a href="#"><i class="icon-share"></i>Blog List</a></li>
+                <li><a href="#"><i class="icon-link"></i>Detalle del Blog</a></li>
+            </ul>
+            <div class="dropdown-btn subtitle-submenu"><i class="icon-arrow-down"></i>Diversa</div>
+            <ul class="list-items-submenu">
+                <li><a href="#"><i class="icon-question"></i>Pmf</a></li>
+                <li><a href="#"><i class="icon-graduation"></i>Base de Conocimientos</a></li>
+                <li><a href="#"><i class="icon-diamond"></i>Precios</a></li>
+                <li><a href="#"><i class="icon-magnifier"></i>Búsqueda</a></li>
+                <li><a href="#"><i class="icon-envelope-open"></i>Envío</a></li>
+                <li><a href="#"><i class="icon-bag"></i>Factura</a></li>
+                <li><a href="#"><i class="icon-exclamation"></i>Erorr</a></li>
+            </ul>
+        </ul>
+        <ul class="list-items-submenu margin-list-items display-none"> 
+            <li><a href="#"><i class="icon-check"></i>Notas</a></li>
+            <li><a href="#"><i class="icon-calculator"></i>Encuesta</a></li>
+            <li><a href="#"><i class="icon-bubbles"></i>Chatea</a></li>
+        </ul>
+        <ul class="display-none">
+            <div class="dropdown-btn subtitle-submenu"><i class="icon-arrow-down"></i>Formularios</div>
+            <ul class="list-items-submenu">
+                <li><a href="#"><i class="icon-notebook"></i>Diseños</a></li>
+                <li><a href="#"><i class="icon-puzzle"></i>Componentes</a></li>
+                <li><a href="#"><i class="icon-check"></i>Validaciones</a></li>
+                <li><a href="#"><i class="icon-magic-wand"></i>Mago</a></li>
+            </ul>
+            <div class="dropdown-btn subtitle-submenu"><i class="icon-arrow-down"></i>Datatables</div>
+            <ul class="list-items-submenu">
+                <li><a href="#"><i class="icon-screen-desktop"></i>Página Completa</a></li>
+                <li><a href="#"><i class="icon-mouse"></i>Desplazable</a></li>
+                <li><a href="#"><i class="icon-notebook"></i>Responsivo</a></li>
+            </ul>
+            <div class="dropdown-btn subtitle-submenu"><i class="icon-arrow-down"></i>Componentes</div>
+            <ul class="list-items-submenu">
+                <li><a href="#"><i class="icon-layers"></i>menu.accordion</a></li>
+                <li><a href="#"><i class="icon-bell"></i>Alertas</a></li>
+                <li><a href="#"><i class="icon-badge"></i>Badges</a></li>
+                <li><a href="#"><i class="icon-control-play"></i>Botones</a></li>
+                <li><a href="#"><i class="icon-layers"></i>Tarjetas</a></li>
+                <li><a href="#"><i class="icon-picture"></i>Carrusel</a></li>
+                <li><a href="#"><i class="icon-chart"></i>Gráficos</a></li>
+                <li><a href="#"><i class="icon-arrow-up"></i>Colapso</a></li>
+                <li><a href="#"><i class="icon-arrow-down"></i>Menús Desplegables</a></li>
+                <li><a href="#"><i class="icon-book-open"></i>Editores</a></li>
+                <li><a href="#"><i class="icon-star"></i>Iconos</a></li>
+                <li><a href="#"><i class="icon-note"></i>Grupos de Entrada</a></li>
+                <li><a href="#"><i class="icon-screen-desktop"></i>Jumbotron</a></li>
+                <li><a href="#"><i class="icon-map"></i>Maps</a></li>
+                <li><a href="#"><i class="icon-docs"></i>Modal</a></li>
+                <li><a href="#"><i class="icon-cursor"></i>Navegación</a></li>
+                <li><a href="#"><i class="icon-options"></i>Paginación</a></li>
+                <li><a href="#"><i class="icon-pin"></i>Tooltips y Popovers</a></li>
+                <li><a href="#"><i class="icon-shuffle"></i>Ordenable</a></li>
+                <li><a href="#"><i class="icon-grid"></i>Tables</a></li>
+            </ul>
+        </ul>
+        <ul class="display-none">
+            <ul class="list-items-submenu margin-list-items"> 
+                <li><a href="#"><i class="icon-logout"></i>Menu Types</a></li>
+            </ul>
+            <div class="dropdown-btn subtitle-submenu"><i class="icon-arrow-down"></i>Menu Levels</div>
+            <ul class="list-items-submenu">
+                <li><a href="#"><i class="icon-arrow-right"></i>First Level</a></li>
+                <li><a href="#"><i class="icon-arrow-right"></i>Second Level</a></li>
+                <li><a href="#"><i class="icon-arrow-right"></i>Third Level</a></li>
+            </ul>
+        </ul>
+    </div>
+    <script src="functions.js"></script>
+</body>
+</html>
+
+<!--     
+
+icon-
+icon-
+icon-
+icon- -->
