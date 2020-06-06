@@ -1,10 +1,12 @@
-
+/*Estilos de cards*/
 * {
     margin: 0;
     padding: 0;
     font-family: 'Nunito', sans-serif; 
   }
-
+.margencontenidocards {
+    padding: 7% 2%;
+}
 .flexbox {
     display: flex;
 }
@@ -34,15 +36,23 @@
 .colorblue {
     color: rgb(17, 168, 206);
 }
+.colorred {
+    color: red;
+}
+.iconcircle {
+    border-radius: 50%;
+}
 .margintextmin {
     margin-left: 2%;
 }
 .margintop {
     margin-top: 2%;
 }
+.marginend {
+    margin-left: 60%;
+}
 .scroll {
     overflow-y: scroll;
-    height: 100%;
     max-height: 90%;
 }
 .scroll::-webkit-scrollbar{
@@ -66,6 +76,32 @@ div.scroll:hover::-webkit-scrollbar-thumb{
     padding: 1%;
     margin-left: 1%;
     margin-right: 1%;
+    height: 5vh;
+}
+
+.bolder {
+    font-weight: bold;
+}
+.marginlarright {
+    margin-right: 20%;
+}
+.marginlarright02 {
+    margin-right: 23%;
+}
+.marginsmallleft {
+    margin-left: 2%;
+}
+.marginsmallleft02 {
+    margin-left: 3%;
+}
+.marginmidleft {
+    margin-left: 20%;
+}
+.marginmidleft02 {
+    margin-left: 22.5%;
+}
+.margintoplarge {
+    margin-top: 5%;
 }
 .comp01 {
     background: white;
@@ -109,38 +145,46 @@ div.scroll:hover::-webkit-scrollbar-thumb{
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .comp04 {
-    background: grey;
+    background:white;
     width: 32.33%;
     margin-top: 1%;
     margin-left: 1%;
     border-radius: 3%;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 1%;
+    max-height: 350px;
 }
 /* comp_# mismo comp pero cambia tamano para ajustar repecto al margen(-1%)*/
 .comp_04 {
-    background: grey;
+    background: white;
     width: 31.33%;
     margin-top: 1%;
     margin-left: 1%;
+    margin-right: 0.5%;
     border-radius: 3%;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 1%;
+    max-height: 350px;
 }
 .comp05 {
-    background: grey;
+    background: white;
     width: 49%;
     margin-top: 1%;
     margin-left: 1%;
     border-radius: 3%;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 3%;
 }
 .comp_05 {
-    background: grey;
+    background:white;
     width: 48%;
     margin-top: 1%;
-    margin-right: 1%;
+    margin-right: 0.5%;
     margin-left: 1%;
     border-radius: 3%;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 3%;
+    max-height: 52vh;
 }
 .comp06 {
     background: grey;
