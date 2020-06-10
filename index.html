@@ -13,7 +13,9 @@
     <link href='calendar/daygrid/main.css' rel='stylesheet' />
     <script src='calendar/core/main.js'></script>
     <script src='calendar/daygrid/main.js'></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script>
+
 
         document.addEventListener('DOMContentLoaded', function() {
           var calendarEl = document.getElementById('calendar');
@@ -24,8 +26,9 @@
   
           calendar.render();
         });
-
     </script>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;900&display=swap');
     </style>
@@ -35,14 +38,77 @@
     <section class="menusuperior">
         <div>menusuperior</div>
     </section>
+
+
     <section class="flexbox">
         <!-- menulateral -->
-        <section class="menulateral">
-            <div class="fixed">barralateral</div>
+        <section class="menulateral menu">
+            <div class="fixed">
+
+                <nav>
+                <ul>
+                    <div>
+                        <img class="icono" src="./iconos/laptop-outline.svg" alt="Link-roto" onclick="">
+                        <li>Dashboards</li><br> 
+                        
+                        
+                        <div class="sub-hover">
+                        <ul class="submenu">
+                           
+                            <ion-icon class="icon2" name="briefcase-outline"></ion-icon>
+                            <li class="submenu-list">Default</li><br>
+
+                            <ion-icon class="icon2" name="pie-chart-outline"></ion-icon> 
+                            <li class="submenu-list" >Analytics</li><br>
+                            <ion-icon class="icon2" name="cart-outline"></ion-icon>
+                            <li class="submenu-list">Ecommerce</li><br>
+                            <ion-icon class="icon2" name="clipboard-outline"></ion-icon>
+                            <li class="submenu-list">Content</li>
+                        
+                        </ul>
+                    </div>
+                    </div>
+
+                    <div>
+                        <img class="icono" src="./iconos/document-outline.svg" alt="Link-roto">
+                        <li>Pages</li><br>
+                    </div>                       
+                  <div>
+                    <img class="icono" src="./iconos/settings-outline.svg" alt="Link-roto">
+                     <li>Aplications</li><br>
+                    </div>
+
+                    <div>
+                     <img class="icono" src="./iconos/options-outline.svg" alt="Link-roto">
+                     <li>UI</li><br>
+                    </div>
+
+                    <div>
+                     <img class="icono" src="./iconos/list-circle-outline.svg" alt="Link-roto">
+                     <li>Menu</li><br>
+                    </div>
+
+                    <div>
+                     <img class="icono" src="./iconos/map-outline.svg"  alt="Link-roto">
+                      <li>Blank Pages</li><br>
+                    </div>
+
+                    <div>
+                      <img class="icono" src="./iconos/newspaper-outline.svg" alt="Link-roto">
+                      <li>Docs</li>
+                    </div>
+                </ul>
+
+            </nav>
+            </div>
         </section>
-        <section class="submenulateral">
-            <div class="fixed">subbarralateral</div>
+       <section class="submenulateral">
+            <!--<div class="fixed">-->
+               
+            </div>
         </section>
+
+
         <!-- inicio cards dashboards-default -->
         <section class="margencontenidocards"> 
             <!-- box tittle -->
